@@ -1,25 +1,17 @@
 /**
  * Configuration Module
  * Contains all configurable constants and settings
- * 
- * ⚠️ NOTE: This is a DEMO version without database integration.
- * User registration and gallery features use dummy data for demonstration.
  */
 
 // ============================================
 // DEPLOYMENT CONFIGURATION
+// Change this URL to your deployed backend URL before deploying frontend
 // ============================================
-// Set to true for GitHub Pages (no backend needed)
-// Set to false if you have a Railway backend with MySQL
-const DEMO_MODE = true;
-
-// Backend URL (only used when DEMO_MODE is false)
-const API_BASE_URL = 'https://click-fit-production.up.railway.app';
+const API_BASE_URL = 'http://localhost:3000';
+// For production, change to your backend URL, e.g.:
+// const API_BASE_URL = 'https://your-backend.railway.app';
 
 const CONFIG = {
-    // Demo mode flag - when true, uses dummy data instead of API calls
-    DEMO_MODE: DEMO_MODE,
-    
     // API Base URL
     API_BASE_URL: API_BASE_URL,
     
@@ -74,6 +66,14 @@ const CONFIG = {
         FACT_ERROR: 'Stay active! (Could not load daily fact)'
     }
 };
+
+// Freeze config to prevent modifications
+Object.freeze(CONFIG);
+Object.freeze(CONFIG.API);
+Object.freeze(CONFIG.UPLOAD);
+Object.freeze(CONFIG.ANIMATION);
+Object.freeze(CONFIG.CAROUSEL);
+Object.freeze(CONFIG.MESSAGES);
 
 // Freeze config to prevent modifications
 Object.freeze(CONFIG);

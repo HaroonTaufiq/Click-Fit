@@ -84,18 +84,6 @@ const Users = (function() {
             '<i class="fas fa-spinner fa-spin me-2"></i>Creating...'
         );
 
-        // Demo mode - simulate account creation
-        if (CONFIG.DEMO_MODE) {
-            setTimeout(function() {
-                showFormStatus('Demo Mode: Account would be created! 🎯 (No database connected)', 'success');
-                $form[0].reset();
-                $submitBtn.prop('disabled', false).html(
-                    '<i class="fas fa-user-plus me-2"></i>Create Account'
-                );
-            }, 800);
-            return;
-        }
-
         // Submit to API
         $.ajax({
             url: API_URL,
@@ -143,28 +131,14 @@ const Users = (function() {
     }
 
     /**
-     * Fetch users from API or use demo data
-     * @returns {Promise} jQuery AJAX promise or resolved promise with demo data
+     * Fetch users from API
+     * @returns {Promise} jQuery AJAX promise
      */
     function fetchUsers() {
         // Show loading state
         $usersLoading.show();
         $usersTableContainer.hide();
         $usersEmpty.hide();
-
-        // Use demo data if in demo mode
-        if (CONFIG.DEMO_MODE) {
-            return $.Deferred(function(deferred) {
-                setTimeout(function() {
-                    const users = CONFIG.DEMO_DATA.USERS;
-                    renderUsersTable(users);
-                    $usersTableContainer.fadeIn(200);
-                    $usersLoading.hide();
-                    showDemoNotice();
-                    deferred.resolve({ success: true, users: users });
-                }, 500); // Simulate loading delay
-            }).promise();
-        }
 
         return $.ajax({
             url: API_URL,
@@ -179,30 +153,15 @@ const Users = (function() {
             },
             error: function(xhr) {
                 console.error('Failed to fetch users:', xhr);
-                // Fallback to demo data on error
-                const users = CONFIG.DEMO_DATA.USERS;
-                renderUsersTable(users);
-                $usersTableContainer.fadeIn(200);
-                showDemoNotice();
+                $usersEmpty.html(`
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Failed to load members. Please try again.</p>
+                `).fadeIn(200);
             },
             complete: function() {
                 $usersLoading.hide();
             }
         });
-    }
-
-    /**
-     * Show demo mode notice
-     */
-    function showDemoNotice() {
-        if ($('#demo-notice-users').length === 0) {
-            $usersTableContainer.before(`
-                <div id="demo-notice-users" class="alert alert-info" style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 8px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
-                    <i class="fas fa-info-circle me-2"></i>
-                    <strong>Demo Mode:</strong> No database connected. Showing sample data.
-                </div>
-            `);
-        }
     }
 
     /**
