@@ -1,0 +1,76 @@
+/* ============================================
+   CSS VARIABLES - Design System
+   ============================================ */
+
+:root {
+    /* Primary Gradient */
+    --primary-gradient: linear-gradient(135deg, #0061f2 0%, #00baee 100%);
+    --primary-gradient-hover: linear-gradient(135deg, #0052cc 0%, #00a8d9 100%);
+    
+    /* Solid Colors */
+    --primary-blue: #0061f2;
+    --primary-blue-dark: #0052cc;
+    --accent-cyan: #00baee;
+    --accent-cyan-light: #e0f7ff;
+    
+    /* Text Colors */
+    --text-dark: #1f2d3d;
+    --text-muted: #6c757d;
+    --text-light: #a0aec0;
+    --text-white: #ffffff;
+    
+    /* Background Colors */
+    --bg-white: #ffffff;
+    --bg-light: #f8f9fa;
+    --bg-lighter: #f0f4f8;
+    
+    /* UI Elements */
+    --card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+    --card-shadow-lg: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+    
+    /* Border */
+    --border-color: #e2e8f0;
+    --border-radius-sm: 8px;
+    --border-radius: 12px;
+    --border-radius-lg: 20px;
+    --border-radius-pill: 50px;
+    
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    /* Font Sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 2rem;
+    --fs-4xl: 2.5rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 3.5rem;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    --spacing-4xl: 6rem;
+    
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Z-index */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal: 1050;
+    --z-tooltip: 1070;
+}
