@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Click Fit - Your Ultimate Fitness Companion for Peak Performance">
+    <title>Click Fit - Unlock Your Peak Performance</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <!-- ============================================
+         NAVBAR SECTION
+    ============================================= -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-dumbbell me-2"></i>
+                <span class="brand-text">Click Fit</span>
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#upload">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#users">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary btn-join" href="#services">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+    ============================================= -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <!-- Hero Content -->
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">
+                        Unlock Your <span class="text-highlight">Peak Performance</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transform your body, elevate your mind. Join thousands of fitness enthusiasts 
+                        who have already started their journey to a healthier lifestyle with Click Fit.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-play-circle me-2"></i>Get Started
+                        </a>
+                        <a href="#upload" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-upload me-2"></i>Track Progress
+                        </a>
+                    </div>
+                    <!-- Stats -->
+                    <div class="hero-stats mt-5">
+                        <div class="stat-item">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Active Users</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Workout Plans</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="col-lg-6 hero-image-wrapper">
+                    <img src="assets/images/hero-fitness-illustration/3786806.jpg" 
+                         alt="Fitness Illustration" 
+                         class="hero-image"
+                         style="border-radius: 4rem;">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================
+         DAILY FITNESS FACT SECTION (AJAX)
+    ============================================= -->
+    <section id="daily-fact" class="daily-fact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <h3 class="fact-title">Today's Fitness Motivation</h3>
+                        <div id="api-content" class="fact-content">
+                            <div class="loading-spinner">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p class="mt-3">Loading today's fitness motivation...</p>
+                            </div>
+                        </div>
+                        <div id="fact-details" class="fact-details" style="display: none;">
+                            <span class="badge bg-primary" id="fact-year"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION
+    ============================================= -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="section-badge">Our Services</span>
+                    <h2 class="section-title">How Click Fit Works</h2>
+                    <p class="section-subtitle">
+                        We provide comprehensive fitness solutions tailored to your unique goals and lifestyle.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Service Cards -->
+            <div class="row g-4">
+                <!-- Card 1: Personal Training -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4 class="service-title">Personal Training</h4>
+                        <p class="service-description">
+                            Get personalized workout plans designed by expert trainers. 
+                            Whether you're a beginner or advanced, we've got you covered.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Nutrition Plans -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h4 class="service-title">Nutrition Plans</h4>
+                        <p class="service-description">
+                            Fuel your body right with customized meal plans. 
+                            Our nutrition experts create plans that complement your fitness goals.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Progress Tracking -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="service-title">Progress Tracking</h4>
+                        <p class="service-description">
+                            Monitor your journey with detailed analytics. 
+                            Track workouts, nutrition, and body measurements all in one place.
+                        </p>
+                        <a href="#" class="service-link">
+                            Learn More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         IMAGE UPLOAD SECTION (Drag & Drop)
+    ============================================= -->
+    <section id="upload" class="upload-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="section-badge">Track Progress</span>
+                    <h2 class="section-title">Track Your Transformation</h2>
+                    <p class="section-subtitle">
+                        Upload your progress photos and watch your transformation unfold. 
+                        Your journey deserves to be documented.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Upload Area -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="drop-zone" class="upload-area">
+                        <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
+                        <div class="upload-content">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h4 class="upload-title">Drag & Drop Your Progress Photos</h4>
+                            <p class="upload-text">or click to browse from your device</p>
+                            <p class="upload-info">
+                                <small>Supports: JPG, PNG, GIF • Max size: 5MB</small>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Upload Progress -->
+                    <div id="upload-progress" class="upload-progress" style="display: none;">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                 role="progressbar" 
+                                 style="width: 0%"></div>
+                        </div>
+                        <p class="progress-text mt-2">Uploading...</p>
+                    </div>
+                    
+                    <!-- Image Preview Container -->
+                    <div id="preview-container" class="preview-container mt-4">
+                        <div class="row g-3" id="preview-grid">
+                            <!-- Preview images will be inserted here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Upload Status Messages -->
+                    <div id="upload-status" class="upload-status mt-3"></div>
+                </div>
+            </div>
+            
+            <!-- Uploaded Images Gallery -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-12">
+                    <div class="gallery-container">
+                        <div class="gallery-header">
+                            <h4 class="gallery-title">
+                                <i class="fas fa-images me-2"></i>Progress Gallery
+                            </h4>
+                            <button class="btn btn-sm btn-outline-primary" id="refreshGalleryBtn">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Gallery Loading State -->
+                        <div id="gallery-loading" class="gallery-loading">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p class="mt-2">Loading gallery...</p>
+                        </div>
+                        
+                        <!-- Gallery Grid -->
+                        <div id="gallery-grid" class="gallery-grid" style="display: none;">
+                            <!-- Images will be inserted here -->
+                        </div>
+                        
+                        <!-- Empty Gallery State -->
+                        <div id="gallery-empty" class="gallery-empty" style="display: none;">
+                            <i class="fas fa-image"></i>
+                            <p>No images uploaded yet. Be the first to share your progress!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         USERS SECTION
+    ============================================= -->
+    <section id="users" class="users-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="section-badge">Community</span>
+                    <h2 class="section-title">Our Fitness Community</h2>
+                    <p class="section-subtitle">
+                        Join our growing community of fitness enthusiasts. 
+                        Register to start your transformation journey.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Add User Form -->
+                <div class="col-lg-5">
+                    <div class="user-form-card">
+                        <h4 class="form-card-title">
+                            <i class="fas fa-user-plus me-2"></i>Join Our Community
+                        </h4>
+                        <form id="addUserForm">
+                            <div class="mb-3">
+                                <label for="userEmail" class="form-label">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <input type="email" 
+                                           class="form-control" 
+                                           id="userEmail" 
+                                           placeholder="your@email.com" 
+                                           required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userPassword" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                    <input type="password" 
+                                           class="form-control" 
+                                           id="userPassword" 
+                                           placeholder="Min. 6 characters" 
+                                           minlength="6"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="userType" class="form-label">Account Type</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user-tag"></i>
+                                    </span>
+                                    <select class="form-select" id="userType">
+                                        <option value="user" selected>Regular User</option>
+                                        <option value="admin">Administrator</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" id="submitUserBtn">
+                                <i class="fas fa-user-plus me-2"></i>Create Account
+                            </button>
+                        </form>
+                        <!-- Form Status Message -->
+                        <div id="form-status" class="form-status mt-3"></div>
+                    </div>
+                </div>
+                
+                <!-- Users List -->
+                <div class="col-lg-7">
+                    <div class="users-list-card">
+                        <div class="users-list-header">
+                            <h4 class="users-list-title">
+                                <i class="fas fa-users me-2"></i>Registered Members
+                            </h4>
+                            <button class="btn btn-sm btn-outline-primary" id="refreshUsersBtn">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Loading State -->
+                        <div id="users-loading" class="users-loading">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p class="mt-2">Loading members...</p>
+                        </div>
+                        
+                        <!-- Users Table -->
+                        <div id="users-table-container" class="table-responsive" style="display: none;">
+                            <table class="table table-hover users-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Email</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th>Joined</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="users-table-body">
+                                    <!-- Users will be inserted here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Empty State -->
+                        <div id="users-empty" class="users-empty" style="display: none;">
+                            <i class="fas fa-users-slash"></i>
+                            <p>No members yet. Be the first to join!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS SECTION
+    ============================================= -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="section-badge">Testimonials</span>
+                    <h2 class="section-title">What Our Members Say</h2>
+                    <p class="section-subtitle">
+                        Don't just take our word for it. Hear from our community of fitness enthusiasts.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Testimonial Slider -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel testimonial-carousel">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Click Fit completely changed my life! I've lost 30 pounds and gained 
+                                so much confidence. The personalized training plans are amazing."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" 
+                                     alt="Sarah Johnson" 
+                                     class="author-avatar"
+                                     style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">>
+                                <div class="author-info">
+                                    <h5 class="author-name">Sarah Johnson</h5>
+                                    <span class="author-title">Fitness Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The nutrition plans are spot-on! I finally understand how to fuel my 
+                                body properly. Best investment I've made in my health."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" 
+                                     alt="Michael Chen" 
+                                     class="author-avatar"
+                                     style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">>
+                                <div class="author-info">
+                                    <h5 class="author-name">Michael Chen</h5>
+                                    <span class="author-title">Marathon Runner</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "As a busy professional, Click Fit's flexible programs are perfect. 
+                                I can work out on my schedule and still see incredible results!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
+                                     alt="Emily Rodriguez" 
+                                     class="author-avatar"
+                                     style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+                                <div class="author-info">
+                                    <h5 class="author-name">Emily Rodriguez</h5>
+                                    <span class="author-title">Business Executive</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The progress tracking feature keeps me motivated every single day. 
+                                Seeing my improvements visualized is incredibly rewarding!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" 
+                                    alt="David Thompson" 
+                                    class="author-avatar"
+                                    style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+                                <div class="author-info">
+                                    <h5 class="author-name">David Thompson</h5>
+                                    <span class="author-title">Gym Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER SECTION
+    ============================================= -->
+    <footer class="footer-section">
+        <!-- Wave Divider Top -->
+        <div class="wave-divider-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#f8f9fa" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,192C384,171,480,117,576,117.3C672,117,768,171,864,181.3C960,192,1056,160,1152,138.7C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
+        </div>
+        
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Footer Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <i class="fas fa-dumbbell me-2"></i>
+                            <span>Click Fit</span>
+                        </a>
+                        <p class="footer-description">
+                            Your ultimate fitness companion for achieving peak performance. 
+                            Transform your body and elevate your lifestyle.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Features</a></li>
+                            <li><a href="#upload">Upload</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Services Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Services</h5>
+                        <ul>
+                            <li><a href="#">Personal Training</a></li>
+                            <li><a href="#">Nutrition Plans</a></li>
+                            <li><a href="#">Progress Tracking</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h5 class="footer-title">Contact Us</h5>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Fitness Street, Health City, HC 12345</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>info@clickfit.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">
+                            &copy; 2025 Click Fit. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SCRIPTS
+    ============================================= -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <!-- Custom JS Modules -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
