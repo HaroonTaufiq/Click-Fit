@@ -415,7 +415,7 @@
                         </div>
                         
                         <!-- Loading State -->
-                        <div id="users-loading" class="users-loading">
+                        <div id="users-loading" class="users-loading" style="display: none;">
                             <div class="spinner-border text-primary" role="status">
                                 <span class="visually-hidden">Loading...</span>
                             </div>
@@ -423,7 +423,7 @@
                         </div>
                         
                         <!-- Users Table -->
-                        <div id="users-table-container" class="table-responsive" style="display: none;">
+                        <div id="users-table-container" class="table-responsive">
                             <table class="table table-hover users-table">
                                 <thead>
                                     <tr>
@@ -436,7 +436,31 @@
                                     </tr>
                                 </thead>
                                 <tbody id="users-table-body">
-                                    <!-- Users will be inserted here -->
+                                    <!-- Dummy users for display -->
+                                    <tr>
+                                        <td><strong>#1</strong></td>
+                                        <td class="user-email">admin@clickfit.com</td>
+                                        <td><span class="user-type-badge admin">Admin</span></td>
+                                        <td><span class="user-status-badge active">Active</span></td>
+                                        <td class="user-date">Jan 15, 2025</td>
+                                        <td class="user-actions">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#2</strong></td>
+                                        <td class="user-email">john.smith@gmail.com</td>
+                                        <td><span class="user-type-badge user">User</span></td>
+                                        <td><span class="user-status-badge active">Active</span></td>
+                                        <td class="user-date">Feb 20, 2025</td>
+                                        <td class="user-actions">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#3</strong></td>
+                                        <td class="user-email">sarah.fitness@outlook.com</td>
+                                        <td><span class="user-type-badge user">User</span></td>
+                                        <td><span class="user-status-badge active">Active</span></td>
+                                        <td class="user-date">Mar 10, 2025</td>
+                                        <td class="user-actions">—</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -444,7 +468,7 @@
                         <!-- Empty State -->
                         <div id="users-empty" class="users-empty" style="display: none;">
                             <i class="fas fa-users-slash"></i>
-                            <p>No members yet. Be the first to join! 😊 No MySQL Database is integrated, you have to setup locally.</p>
+                            <p>No real members yet. Be the first to join! 😊 No MySQL Database is integrated, you have to setup locally for the form to be active or functional.</p>
                         </div>
                     </div>
                 </div>
