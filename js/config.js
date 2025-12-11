@@ -7,7 +7,7 @@
 // DEPLOYMENT CONFIGURATION
 // Change this URL to your deployed backend URL before deploying frontend
 // ============================================
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://click-fit-production.up.railway.app';
 // For production, change to your backend URL, e.g.:
 // const API_BASE_URL = 'https://your-backend.railway.app';
 

@@ -84,27 +84,14 @@ const Users = (function() {
             '<i class="fas fa-spinner fa-spin me-2"></i>Creating...'
         );
 
-        // Submit to API
-        $.ajax({
-            url: API_URL,
-            method: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify({ email, password, type }),
-            success: function(response) {
-                showFormStatus('Account created successfully! 🎉', 'success');
-                $form[0].reset();
-                fetchUsers(); // Refresh the users list
-            },
-            error: function(xhr) {
-                const message = xhr.responseJSON?.message || 'Failed to create account';
-                showFormStatus(message, 'error');
-            },
-            complete: function() {
-                $submitBtn.prop('disabled', false).html(
-                    '<i class="fas fa-user-plus me-2"></i>Create Account'
-                );
-            }
-        });
+        // Static mode: Simulate account creation (no backend)
+        setTimeout(function() {
+            showFormStatus('Demo: Account would be created! (No database connected)', 'success');
+            $form[0].reset();
+            $submitBtn.prop('disabled', false).html(
+                '<i class="fas fa-user-plus me-2"></i>Create Account'
+            );
+        }, 800);
     }
 
     /**
@@ -283,7 +270,10 @@ const Users = (function() {
     function init() {
         cacheElements();
         bindEvents();
-        fetchUsers(); // Load users on page load
+        // Static mode: Don't fetch from API, table is pre-populated in HTML
+        // fetchUsers(); // Disabled - using static HTML data
+        $usersLoading.hide();
+        $usersTableContainer.show();
     }
 
     // Public API
